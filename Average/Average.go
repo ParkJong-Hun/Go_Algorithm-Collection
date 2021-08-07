@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func solution(arr []int) float64 {
 	sum := 0
 	for _, value := range arr {
@@ -10,5 +12,5 @@ func solution(arr []int) float64 {
 
 func main() {
 	numbers := []int{1, 2, 3, 4}
-	solution(numbers) //2.5
+	fmt.Println(solution(numbers)) //2.5
 }
