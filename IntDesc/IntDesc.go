@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -9,6 +10,7 @@ import (
 func solution(n int64) int64 {
 	str := strconv.Itoa(int(n))
 	arr := strings.Split(str, "")
+	sort.Sort(sort.Reverse(sort.StringSlice(arr)))
 	answer, _ := strconv.Atoi(strings.Join(arr, ""))
 	return int64(answer)
 }
